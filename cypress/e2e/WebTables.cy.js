@@ -89,7 +89,7 @@ describe("Handling WwebTablles", () => {
         cy.wrap($row).within(() => {
 
           cy.get('td:nth-child(3)').then(e=>{
-            cy.log(e.text())
+            cy.log("the email are : " e.text())
           })
         });
     });
